@@ -1,6 +1,6 @@
 # 🎮 2048 Pro – Full Implementation of the Classic Puzzle Game
 
-**Live Preview:** [🔗 View Game](https://your-demo-link.com)
+**Live Preview:** [🔗 View Game](https://shymdima.github.io/2048-project/)
 
 ---
 
@@ -53,31 +53,33 @@ The JavaScript code is responsible for:
 
 ---
 
-📖 How to Run the Project Locally
-1️⃣ Prerequisites
-Before running the project, ensure you have the following installed:
+## 📖 How to Run the Project Locally
 
-Git – Download & Install Git
-Node.js (v16 or later) – Download Node.js
+### 1️⃣ **Prerequisites**  
+Before running the project, ensure you have the following installed:  
+- **Git** – [Download & Install Git](https://git-scm.com/)  
+- **Node.js (v16 or later)** – [Download Node.js](https://nodejs.org/)
+
 To check if Node.js and npm are installed, run:
+- **node -v**  # Should return a version number (v16 or later recommended)
+- **npm -v**   # Should return a version number
 
-node -v # Should return a version number (v16 or later recommended)
-npm -v # Should return a version number
-2️⃣ Clone the Repository
+
+### 2️⃣ **Clone the Repository**
 Run the following command in your terminal:
+- **git clone https://github.com/your-username/2048-project.git**
 
-git clone https://github.com/your-username/2048-project.git
 Navigate into the project folder:
+- **cd 2048-project**
 
-cd crazybaby-landing-page
-3️⃣ Install Dependencies
+### 3️⃣ **Install Dependencies**
 Run the following command to install required packages:
+- **npm install**
 
-npm install
-4️⃣ Run the Project
+### 4️⃣ **Run the Project**
 Start a local development server:
+- **npm run dev**
 
-npm run dev
 #The site should now be accessible at http://localhost:3000/ (or another port specified in the console).
 
 
