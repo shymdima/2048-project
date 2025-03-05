@@ -380,30 +380,25 @@ class Game {
       const scorecount = document.querySelector('.game-score');
       const cells = document.querySelectorAll('.field-cell');
 
-      const cellsArray = [...cells].map(
-        (cell) => parseInt(cell.textContent) || 0,
-      );
-      const nonEmptyCells = cellsArray.filter((content) => content !== 0);
+     
 
-      if (nonEmptyCells.length === 2 && scorecount.textContent === '0') {
-      } else {
-        cells.forEach((cell) => {
-          cell.textContent = '';
-          cell.className = 'field-cell';
-        });
+      cells.forEach((cell) => {
+        cell.textContent = '';
+        cell.className = 'field-cell';
+      });
 
-        this.addCell();
-        this.addCell();
+      this.addCell();
+      this.addCell();
 
-        scorecount.textContent = 0;
+      scorecount.textContent = 0;
 
-        const messageGameOver = document.querySelector('.message-lose');
-        const messageGameWin = document.querySelector('.message-win');
+      const messageGameOver = document.querySelector('.message-lose');
+      const messageGameWin = document.querySelector('.message-win');
 
-        messageGameOver.classList.add('hidden');
-        messageGameWin.classList.add('hidden');
-      }
-    });
+      messageGameOver.classList.add('hidden');
+      messageGameWin.classList.add('hidden');
+    },
+    );
   }
 
   checkBeforeGameOver() {
